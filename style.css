@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 15px;
+  width: auto;
+  height: 2020px;
+}
+
+@font-face {
+  font-family: "Anteri";
+  src: url("AnteriSignature_PERSONAL_USE_ONLY.otf") format("opentype");
+}
+
+.App {
+  width: auto;
+  height: 2020px;
+  display: grid;
+  grid-template-columns: repeat(136, 1fr);
+  grid-template-rows: repeat(202, 1fr);
+  background-image: url("img/fundo.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header{
+  grid-column: 4 / 133;
+  grid-row: 3 / 12;
+  background-color: #ffffffa8;
+  border-radius: 30px;
+  transition: background-color 0.5s ease;
+}
+
+#logo img{
+  width: 90px;
+  height: 90px;  
+}
+
+#nome{
+  position: relative;
+  left: 100px;
+  top: -70px;
+  font-size: 2.5rem;
+  color: rgb(46, 95, 70);
+}
+
+#produtos{
+  font-size: 2rem;
+  position: relative;
+  left: 420px;
+  top: -110px;
+  color: #2e5f46;
+}
+
+#produtos:hover,#servicos:hover,#consultorias:hover{
+  cursor: pointer;
+}
+#servicos{
+  font-size: 2rem;
+  position: relative;
+  left: 620px;
+  top: -150px;
+  color: rgb(46, 95, 70);
+}
+
+#consultorias{
+  font-size: 2rem;
+  position: relative;
+  left: 820px;
+  top: -190px;
+  color: rgb(46, 95, 70);
+}
+
+
+
+.produtoslinks {
+  opacity: 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  position: absolute;
+  background-color: #72b492;
+  top: 80px;
+  left: 435px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  width: 180px;
+  transition: opacity 0.5s ease;
+}
+
+.servicoslinks {
+  opacity: 0;
+  border-radius: 5px;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  background-color: #72b492;
+  top: 80px;
+  left: 635px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  width: 230px;
+  transition: opacity 0.5s ease;
+}
+
+.consultorialinks {
+  opacity: 0;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  position: absolute;
+  background-color: #72b492;
+  color: white;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  width: 270px;
+  transition: opacity 0.5s ease;
+  top: 80px;
+  left: 840px;
+}
+.consultorialinks:hover,
+.servicoslinks:hover,
+.produtoslinks:hover {
+  cursor: pointer;
+}
+
+
+
+
+#objetivo {
+  grid-column: 13 / 63;
+  grid-row: 15 / 54;
+  background-color: #ffffffa8;
+  border-radius: 6%;
+  padding: 10px;
+  width: 511px;
+  height: 306px;
+}
+
+#objetivo h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  font-family: "Lucida Sans";
+  color: rgb(49, 97, 72);
+}
+
+#objetivo h3 {
+  font-size: 1.4rem;
+  text-align: justify;
+  font-family: "Lucida Sans";
+  font-weight: normal;
+  color: rgb(53, 109, 80);
+}
+
+#img_eolico {
+  grid-column: 68 / 126;
+  grid-row: 15 / 54;
+}
+
+#img_eolico img {
+  width: 511px;
+  height: 306px;
+  border-radius: 10px;
+  opacity: 93%;
+}
+
+#painel {
+  grid-column: 10 / 65;
+  grid-row: 56 / 115;
+  background-color: #549872;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  transition: box-shadow 1s ease, transform 1s ease;
+  color: #f6faf7;
+}
+
+#painel h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#painel h3 {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin: 10%;
+}
+
+#painel img {
+  width: 506px;
+  height: 273px;
+  border-radius: 10px;
+}
+
+#painel:hover {
+  box-shadow: 0 0 10px 5px black;
+  transform: translate(10px, -10px);
+  cursor: pointer;
+}
+
+#consultoria {
+  grid-column: 68 / 126;
+  grid-row: 56 / 115;
+  background-color: #549872;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  transition: box-shadow 1s ease, transform 1s ease;
+  color: rgb(246, 250, 247);
+}
+
+#consultoria h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#consultoria h3 {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin: 3%;
+}
+
+#consultoria img {
+  width: 525px;
+  height: 303px;
+  border-radius: 10px;
+}
+
+#consultoria:hover {
+  box-shadow: 0 0 10px 5px black;
+  transform: translate(-10px, -10px);
+  cursor: pointer;
+}
+
+#ss {
+  grid-column: 10 / 126;
+  grid-row: 120 / 170;
+  background-color: #549872;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  transition: box-shadow 1s ease, transform 1s ease;
+  color: rgb(246, 250, 247);
+}
+
+#ss h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#ss h3 {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin: 3%;
+}
+
+#ss:hover {
+  box-shadow: 0 0 10px 5px black;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+#org {
+  display: flex;
+  justify-content: space-around;
+}
+
+#org h3 {
+  text-align: center;
+}
+
+#org :first-child img {
+  width: 244px;
+  height: 158px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+#org :last-child img {
+  width: 224px;
+  height: 144px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contato {
+  grid-column: 1 / 136;
+  grid-row: 188 / 201;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  color: rgb(114, 180, 146);
+}
+
+.logo {
+  position: relative;
+  left: 100px;
+  bottom: 10%;
+}
+
+.outros {
+  position: relative;
+  left: 500px;
+  bottom: 35px;
+}
+
+.outros h3{
+  margin: 7px;
+}
+.outros:hover {
+  cursor: pointer;
+}
+
+.fale {
+  position: relative;
+  left: 1000px;
+  bottom: 117px;
+}
+
+.fale h3{
+  margin: 7px;
+}
+
+.fale:hover {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: -1390px;
+  left: 0;
+  right: 0;
+  color: rgb(46, 95, 70);
+}

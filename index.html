@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>GreenTech</title>
+</head>
+<body class="App">
+    <header>
+        <div id="logo"><img src="img/logo.png" alt="Logo"></div>
+        <div id="nome">GreenTech</div>
+        <div id ="produtos" class="botaos">Produtos</div>
+        <div id ="servicos" class="botaos">Serviços</div>
+        <div id ="consultorias" class="botaos">Consultorias</div>
+    </header>
+    <div id="objetivo">
+        <h1>Nosso Objetivo</h1>
+        <h3>
+        Fornecer soluções de tecnologia limpa e sustentável para ajudar nossos clientes a reduzir sua pegada de carbono e criar um futuro mais verde e sustentável. Valorizamos a inovação, a colaboração com nossos clientes e o apoio a iniciativas de caridade e comunitárias. Buscamos liderar o setor de tecnologia sustentável e oferecer soluções eficazes para alcançar nossos objetivos de sustentabilidade.
+        </h3>
+    </div>
+    <div id="img_eolico">
+        <img src="./img/eolico2.jpg" alt="eolico"></img>
+    </div>
+    <div id="painel">
+        <h1> Paineis Solares </h1>
+        <h3>Economize na sua conta de energia e reduza sua pegada de carbono com painéis solares!</h3>
+        <img src="img/painel.jpg" alt="painel"></img>
+    </div>
+    <div id="consultoria">
+        <h1>Consultoria</h1>
+        <h3>Sua empresa estará um passo à frente na transição para uma economia mais verde e sustentável. Nossos especialistas irão guiá-lo em todos os aspectos da sustentabilidade, desde a gestão de resíduos até a eficiência energética. Invista agora mesmo e torne sua empresa mais sustentável.</h3>
+        <img src="img/consultoria.jpg" alt="consultoria"></img>
+    </div>
+    <div id="ss">
+        <h1>Soluções Sustentaveis</h1>
+        <h3>As soluções sustentáveis da GreenTech oferecem tecnologias inovadoras para um futuro mais limpo e sustentável. Desde painéis solares até turbinas eólicas, nossos produtos são eficientes e acessíveis. Faça sua parte no combate às mudanças climáticas e invista em soluções sustentáveis hoje mesmo.</h3>
+        <div id="org">
+            <div>
+                <h3>Treinamentos</h3>
+                <img src="img/treinamento.jpg" alt="treinamento"></img>
+            </div>
+            <div>
+                <h3>Monitoramento e redução de emissões de gases</h3>
+                <img src="img/preservação.jpg" alt="preservação"></img>
+            </div>
+        </div>
+    </div>
+    <div id="contato">
+        <div>
+            <h1 class="logo">GreenTech(logo)</h1>
+        </div>
+        <div class="outros">
+            <h3>Página inicial</h3>
+            <h3>Outros Produtos</h3>
+            <h3>Sobre nós</h3>
+            <h3>Por que ser mais verde</h3>
+        </div>
+        <div class="fale">
+            <h3>Fale conosco</h3>
+            <h3>(11) 99999-9999</h3>
+            <h3>exemplo@GreenTech.com</h3>
+        </div>
+    </div>
+    <div class="produtoslinks">
+        <br>
+        <h3>Painéis Solares</h3><br>
+        <h3>Turbinas Eólicas</h3><br>
+        <h3>Outros Produtos</h3>
+    </div>
+    <div class="servicoslinks">
+        <br>
+        <h3>Instalção de baterias</h3><br>
+        <h3>Manutenção</h3><br>
+        <h3>Treinamentos</h3><br>
+        <h3>Outros serviços</h3>
+    </div>
+    <div class="consultorialinks">
+        <br>
+        <h3>Avalição de preços</h3><br>
+        <h3>Monitoramento e redução de emissões</h3><br>
+        <h3>Obtenção de certificações</h3>
+    </div>
+    <footer>
+        <h3>Copyright © 2023 Green Tech. Todos os direitos reservados.</h3>
+    </footer>
+<script>
+
+    let h = document.querySelector("header");
+    let p = document.querySelector("#produtos");
+    let s = document.querySelector("#servicos");
+    let c = document.querySelector("#consultorias");
+    let produtoslinks = document.querySelector(".produtoslinks");
+    let servicoslinks = document.querySelector(".servicoslinks");
+    let consultorialinks = document.querySelector(".consultorialinks");
+    
+    p.addEventListener("click", function(){
+        if(produtoslinks.style.opacity=="1"){
+            produtoslinks.style.opacity="0";
+            h.style.backgroundColor = "rgba(255,255,255,0.5)";
+            p.style.color = "#2e5f46";
+        }else{
+            produtoslinks.style.opacity="1";
+            servicoslinks.style.opacity="0";
+            consultorialinks.style.opacity="0";
+            h.style.backgroundColor = "#72b492";
+            p.style.color ="#f6faf7";
+            s.style.color = "#2e5f46";
+            c.style.color = "#2e5f46";
+        }
+    });
+
+    s.addEventListener("click", function(){
+        if(servicoslinks.style.opacity=="1"){
+            servicoslinks.style.opacity="0";
+            h.style.backgroundColor = "rgba(255,255,255,0.5)";
+            s.style.color = "#2e5f46";
+        }else{
+            servicoslinks.style.opacity="1";
+            produtoslinks.style.opacity="0";
+            consultorialinks.style.opacity="0";
+            h.style.backgroundColor = "#72b492";
+            s.style.color ="#f6faf7";
+            p.style.color = "#2e5f46";
+            c.style.color = "#2e5f46";
+        }
+    });
+
+    c.addEventListener("click", function(){
+        if(consultorialinks.style.opacity=="1"){
+            consultorialinks.style.opacity="0";
+            h.style.backgroundColor = "rgba(255,255,255,0.5)";
+            c.style.color = "#2e5f46";
+        }else{
+            consultorialinks.style.opacity="1";
+            servicoslinks.style.opacity="0";
+            produtoslinks.style.opacity="0";
+            h.style.backgroundColor = "#72b492";
+            c.style.color ="#f6faf7";
+            s.style.color = "#2e5f46";
+            p.style.color = "#2e5f46";
+        }
+    });
+
+    
+
+</script>
+</body>
+</html>
