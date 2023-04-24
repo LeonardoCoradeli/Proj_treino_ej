@@ -1,4 +1,4 @@
-Projeto de fim de treineimento da EJ. 
+Projeto de fim de treineimento da EJ.<br>
 Site de uma empresa ficticia chamada GreenTech:
 "GreenTech Solutions é uma empresa especializada em tecnologias sustentáveis para empresas e residências. Nós fornecemos soluções de energia limpa e eficiente, como painéis solares, turbinas eólicas, baterias de armazenamento de energia e sistemas de iluminação LED.
 
